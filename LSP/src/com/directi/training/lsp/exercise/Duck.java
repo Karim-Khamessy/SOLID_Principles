@@ -1,14 +1,14 @@
-package com.directi.training.lsp.exercise;
+package com.directi.training.lsp.exercise_refactored;
 
-public class Duck
-{
-    public void quack()
-    {
-        System.out.println("Quack...");
+public class Duck implements IDuck {
+    @Override
+    public void quack() {
+        System.out.println("Quack.....");
     }
 
-    public void swim()
-    {
-        System.out.println("Swim...");
+    @Override
+    public void swim() {
+        System.out.println("Swim....");
     }
+
 }
